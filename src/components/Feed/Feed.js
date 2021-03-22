@@ -3,6 +3,7 @@ import "./Feed.css"
 import CreateIcon from "@material-ui/icons/Create"
 import InputOption from '../InputOption/InputOption'
 import { CalendarViewDay, EventNote, Subscriptions, Image } from '@material-ui/icons'
+import Post from '../Post/Post'
 
 const Feed = () => {
     return (
@@ -20,9 +21,9 @@ const Feed = () => {
                     <InputOption Icon={Subscriptions} title="Video" color="#E7A33E" />
                     <InputOption Icon={EventNote} title="Event" color="#C0CBCD" />
                     <InputOption Icon={CalendarViewDay} title="Photo" color="#7FC15E" />
-
                 </div>
             </div>
+            <Post />
         </div>
     )
 }
