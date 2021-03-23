@@ -16,11 +16,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="app_body">
-        <Sidebar />
-        <Feed />
-        {/* <Widgets /> */}
-      </div>
+
+      {!user ? <Login /> : (
+        <div className="app_body">
+          <Sidebar />
+          <Feed />
+          {/* <Widgets /> */}
+        </div>
+      )}
     </div>
   );
 }
